@@ -27,3 +27,27 @@ function wordBlanks(noun, adjective, verb, adverb){
 }
 
 console.log(wordBlanks("dog", "big", "ran", "quickly"));
+
+
+// Arrays
+var test_array = ["element1", 2]; 			// array declaration (elements do not have to match type)
+// Nested Array
+var nested_array = [["array1", 2], ["array2"], 3, pi]; 
+test_array.push(["element3"]); 				// push element to the end of the array
+var last_element = test_array.pop();		// pop the last element from the array 
+test_array.shift();							// removes the first element of the array
+test_array.unshift("new_element"); 			// adds new_element to the front of the array
+
+
+// Objects
+var testObject = {
+	"hat" : "ballcap";
+	"shirt" : "jersey";
+	"shoes" : "cleats";
+};
+
+var hatValue = testObject.hat; 				// should return ballcap
+var shirtValue = testObject["shirt"];		// use this if the item in the object has a problematic field name
+
+
+// https://www.youtube.com/watch?v=PkZNo7MFNFg 1:53:17 resume here
